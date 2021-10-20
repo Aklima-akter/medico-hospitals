@@ -6,10 +6,10 @@ const Hospitalutilities = () => {
         <div className='hospitalutilites d-flex  justify-content-center align-items-center
 
         justify-content-around align-items-center py-5'>
-            <div className='images '>
+            <div className='images  medico-half'>
                <img className='img-fluid md-0 m-md-5'  src="https://i.ibb.co/R6Mfyqb/image-001.jpg" alt="" />
             </div>
-            <div className='ml-5'>
+            <div className='ml-5 medico-half'>
                 <h1>Medico Hospital</h1>
                 <p>The reputation of Medico Hospital is the result of quality clinical outcome and comprehensive care, made achievable through world class integrated healthcare facilities by highly trained professionals. Thus, Medico Hospital strives to meet patients’ standards through quality healthcare and making a difference in their lives.</p>
                 <ul>

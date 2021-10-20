@@ -17,3 +17,39 @@ div#root {
   width: 100%;
   overflow-x: hidden;
 }
+.about-my-section{
+  display: flex;
+}
+.about-my-section div{
+  width: 50%;
+}
+div#accordionExample {
+  width: 100%;
+}
+.accordion-item {
+  width: 100% !important;
+}
+.accordion-body {
+  width: 100% !important;
+}
+div#collapseOne {
+  width: 100%;
+}
+@media only screen and (max-width: 600px){
+  .about-my-section{
+    flex-wrap: wrap;
+  }
+  .about-my-section div{
+    width: 100%;
+  }
+  .about-my-section.d-flex.justify-content-around.align-items-center.p-5 {
+    flex-wrap: wrap;
+}
+}
+@media only screen and (max-width: 600px){
+  .footer-above{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className="footer">
             <div className="footer-above d-flex justify-content-around align-items-center ">
                 <div className='about-medico'>
                 <h4>About Medico</h4>

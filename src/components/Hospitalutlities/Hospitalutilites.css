@@ -6,3 +6,12 @@
 .images img{
     max-width: 400px;
 } 
+
+.medico-half{
+    width: 50%;
+}
+@media only screen and  (max-width:600px){
+    .medico-half{
+        width: 100% !important;
+    }
+}
