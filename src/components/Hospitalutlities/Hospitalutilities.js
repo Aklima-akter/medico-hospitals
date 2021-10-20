@@ -3,9 +3,11 @@ import './Hospitalutilites.css'
 
 const Hospitalutilities = () => {
     return (
-        <div className='hospitalutilites d-flex justify-content-around align-items-center p-5'>
-            <div className='images mx-5'>
-               <img src="https://i.ibb.co/R6Mfyqb/image-001.jpg" alt="" />
+        <div className='hospitalutilites d-md-flex d-lg-flex justify-content-sm-start align-items-sm-start
+
+        justify-content-around align-items-center py-5'>
+            <div className='images '>
+               <img className='img-fluid m-5'  src="https://i.ibb.co/R6Mfyqb/image-001.jpg" alt="" />
             </div>
             <div>
                 <h1>Medico Hospital</h1>

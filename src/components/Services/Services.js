@@ -16,10 +16,10 @@ const Services = () => {
         
     return (
         
-        < div className='services py-5 mt-5' >
+        < div className='services py-5 mt-5' id="services" >
         <h2 className='fw-bold text-center mt-5 '>OUR SERVICE</h2>
         <p className='text-center'>We try to give best service</p>
-        <div id='services' className='d-flex justify-content-around flex-wrap'>
+        <div id='services' className='d-flex d-sm-flex justify-content-around flex-wrap'>
             
             
             {

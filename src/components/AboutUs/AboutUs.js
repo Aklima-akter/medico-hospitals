@@ -4,14 +4,14 @@ const AboutUs = () => {
     return (
 
         <>
-        <div id='about' className='d-flex justify-content-around align-items-center p-5'>
+        <div id='about' className='d-md-flex justify-content-around align-items-center p-5'>
             
             <div className='about'>
                 <h1>About us</h1>
                 <p> Medico Hospital, an institution that is built, staffed, and equipped for the diagnosis of disease; for the treatment, both medical and surgical, of the sick and the injured; and for their housing during this process. The modern hospital also often serves as a centre for investigation and for teaching.</p>
             </div>
             <div>
-                <img src="https://i.ibb.co/s5v80NX/hospital-room.jpg" alt=""  />
+                <img className="img-fluid" src="https://i.ibb.co/s5v80NX/hospital-room.jpg" alt=""  />
             </div>
         </div>
 

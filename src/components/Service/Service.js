@@ -8,7 +8,7 @@ const Service = ({service}) => {
    
     return (
         <div className='service my-4'>
-            <Card style={{ width: '22rem' }}>
+            <Card style={{ width: '20rem' }}>
                 <Card.Img style={{ height: '250px' }} variant="top" src={img} />
             <Card.Body>
             <Card.Title>{name}</Card.Title>

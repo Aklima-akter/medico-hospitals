@@ -1,39 +1,44 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 
 const LogIn = () => {
-    const { singInUsingGoogle} = useAuth();
-    
-    const handleSubmit =(e) =>{
-        e.preventDefault();
-    }
+    const { singInUsingGoogle, handleEmailChange, handlePasswordChange, handleFormcontrol, signInUser,setIsLoading } = useAuth();
+    const location =useLocation();
+    const history = useHistory()
+    const redirect_uri = location.state?.fron?.pathname || '/home';
+    console.log(location.state?.fron?.pathname , "came from");
+    console.log(location);
 
-    const handleEmailChange =(e) =>{
-        console.log(e.target.value);
+    const handleGoogleLogIn = () =>{
+      singInUsingGoogle()
+      .then(result =>{
+        history.push(redirect_uri);
+      })
+      .finally(() =>setIsLoading(false))
     }
     return (
         <div>
-            <form onSubmit={handleSubmit} className="row g-3">
+            <form onSubmit={handleFormcontrol} className="row g-3">
                 <h3 className="text-center pt-5">Please Log in</h3>
   <div className="col-md-6">
     <label htmlFor="inputEmail4" className="form-label">Email</label>
-    <input onBlur={handleEmailChange}  type="email" className="form-control" id="inputEmail4"/>
+    <input onblur={handleEmailChange}  type="email" className="form-control" id="inputEmail4"/>
   </div>
   <div className="col-md-6">
     <label htmlFor="inputPassword4" className="form-label">Password</label>
-    <input type="password" className="form-control" id="inputPassword4"/>
+    <input onblur={handlePasswordChange} type="password" className="form-control" id="inputPassword4"/>
   </div>
   
   <div className="col-12">
-    <button type="submit" className="btn btn-primary">Sign in</button>
+    <button onClick={signInUser} type="submit" className="btn btn-primary">Sign in</button>
   </div>
 </form>
 <p className='text-center'>new to Medico? <Link to='register'>Create Account</Link></p>
 <div className='text-center pb-5'>
     <h4>--------or-------</h4>
-<button onClick={singInUsingGoogle} className='btn btn-success'>Google sign in</button>
+<button onClick={handleGoogleLogIn} className='btn btn-success'>Google sign in</button>
 </div>
         </div>
     );
