@@ -3,13 +3,13 @@ import './Hospitalutilites.css'
 
 const Hospitalutilities = () => {
     return (
-        <div className='hospitalutilites d-md-flex d-lg-flex justify-content-sm-start align-items-sm-start
+        <div className='hospitalutilites d-flex  justify-content-center align-items-center
 
         justify-content-around align-items-center py-5'>
             <div className='images '>
                <img className='img-fluid m-5'  src="https://i.ibb.co/R6Mfyqb/image-001.jpg" alt="" />
             </div>
-            <div>
+            <div className='ml-5'>
                 <h1>Medico Hospital</h1>
                 <p>The reputation of Medico Hospital is the result of quality clinical outcome and comprehensive care, made achievable through world class integrated healthcare facilities by highly trained professionals. Thus, Medico Hospital strives to meet patients’ standards through quality healthcare and making a difference in their lives.</p>
                 <ul>

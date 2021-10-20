@@ -2,9 +2,9 @@
     width: 100px;
     color: rgb(75, 75, 77);
 }
-/* .about-medico{
-    width: 300px;
-} */
+.about-medico{
+    max-width: 300px;
+}
 .copy{
     background-color: rgb(48, 48, 49);
     
