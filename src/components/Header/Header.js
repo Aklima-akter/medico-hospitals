@@ -1,10 +1,10 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import useAuth from '../../hooks/useAuth';
 import { HashLink } from 'react-router-hash-link';
+import useAuth from '../../hooks/useAuth';
+import './Header.css';
 
 
-import  './Header.css'
 
 const Header = () => {
   const {user, logOut} = useAuth();
@@ -24,9 +24,9 @@ const Header = () => {
       {user.email && <span className='text-dark pe-3'>Hello {user.displayName}</span>}
       { 
         user.email?
-        <Nav.Link as={NavLink} to="/home" className='text-dark fw-bolder'> <button onClick={logOut}>logout</button></Nav.Link>
+        <Nav.Link as={NavLink} to="/home" className='text-dark  fw-bolder'> <button className="btn btn-danger" onClick={logOut}>logout</button></Nav.Link>
         :
-        <Nav.Link as={NavLink} to="/login" className='text-dark fw-bolder'>Login</Nav.Link>}
+        <Nav.Link as={NavLink} to="/login" className='text-dark  btn btn-success text-white fw-bolder'>Login</Nav.Link>}
       
     </Navbar.Collapse>
     </Container>

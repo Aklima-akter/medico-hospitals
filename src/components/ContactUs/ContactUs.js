@@ -1,8 +1,8 @@
-import React from 'react';
-import './ContactUs.css';
+import { faEnvelope, faMapMarkerAlt, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faMapMarkerAlt, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
-import { Button, Form  } from 'react-bootstrap';
+import React from 'react';
+import { Button, Form } from 'react-bootstrap';
+import './ContactUs.css';
 
 
 
@@ -16,7 +16,7 @@ const ContactUs = () => {
         <>
         <div >
             <h1 className='text-center pt-5'>Contact us</h1>
-            <div className=' d-flex justify-content-around align-items-center p-5'>
+            <div className=' d-flex information-header justify-content-around align-items-center p-5'>
                 <div className='information border border-success border-3 bg-success text-white p-4 rounded-3 text-center'>
                     <h2>{element1}</h2>
                     <h3 className='p-2'>Our Address</h3>

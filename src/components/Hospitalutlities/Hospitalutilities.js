@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hospitalutilites.css'
+import './Hospitalutilites.css';
 
 const Hospitalutilities = () => {
     return (
@@ -7,7 +7,7 @@ const Hospitalutilities = () => {
 
         justify-content-around align-items-center py-5'>
             <div className='images '>
-               <img className='img-fluid m-5'  src="https://i.ibb.co/R6Mfyqb/image-001.jpg" alt="" />
+               <img className='img-fluid md-0 m-md-5'  src="https://i.ibb.co/R6Mfyqb/image-001.jpg" alt="" />
             </div>
             <div className='ml-5'>
                 <h1>Medico Hospital</h1>

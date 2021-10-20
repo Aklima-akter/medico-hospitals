@@ -15,9 +15,9 @@ const AboutUs = () => {
             </div>
         </div>
 
-        <div className='d-flex justify-content-around align-items-center p-5'>
+        <div className='about-my-section d-flex justify-content-around align-items-center p-5'>
             <div className='me-3'>
-            <img src="https://i.ibb.co/1fXfmwf/health-is-all-we-social-media-post-medicine-healthcare-advertising-web-banner-template-social-media.jpg" alt=""  />
+            <img className="img-fluid" src="https://i.ibb.co/1fXfmwf/health-is-all-we-social-media-post-medicine-healthcare-advertising-web-banner-template-social-media.jpg" alt=""  />
             </div>
             <div>
                 <h1>Medico Hospital</h1>

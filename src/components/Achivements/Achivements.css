@@ -6,6 +6,36 @@
 .para{
     width: 350px;
 }
+.achive .flexes-item{
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+   justify-content: space-between;
+   text-align: center;
+}
 .achive{
     background-color: floralwhite;
+}
+.images img {
+    max-width: 400px;
+    width: 100%;
+}
+@media only screen and (max-width:400px){
+    .achive .flexes-item{
+        display:flex;
+        align-items:center;
+        flex-wrap: wrap;
+       justify-content: center;
+       text-align: center;
+    }
+    .hospitalutilites {
+        flex-wrap: wrap;
+    }
+    .about-my-section{
+        flex-wrap: wrap;
+    }
+    .information {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }

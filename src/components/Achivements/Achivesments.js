@@ -1,13 +1,13 @@
 import React from 'react';
-import './Achivements.css'
+import './Achivements.css';
 
 const Achivesments = () => {
     return (
-        <div className=' p-5 achive'>
+        <div className=' p-5 achive container'>
             <h2 className='text-center '>Achivements</h2>
             <p className='para mx-auto pb-5 text-center'>Each March Gifford Medical Center’s
                  corporators gather to review the year past.</p>
-            <div className=' d-flex justify-content-around align-items-center text-center'>
+            <div className='flexes-item py-5'>
              <div className='achivements border border-info '>
                 <h2>800+</h2>
                 <p>Happy Clients</p>
